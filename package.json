@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-werk85",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "repository": "git@github.com:werk85/stylelint-config-werk85.git",
   "author": "Malte Legenhausen <malte@werk85.de>",
@@ -8,6 +8,7 @@
   "dependencies": {
     "prettier": "^2.2.1",
     "stylelint": "^13.11.0",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-prettier": "^1.2.0"
   }
