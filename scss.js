@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./index.js'],
+  extends: ['stylelint-config-standard-scss', './index.js'],
   plugins: [ 'stylelint-scss'],
   rules: {
     // proper linting for scss @-functions
