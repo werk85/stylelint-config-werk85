@@ -10,39 +10,77 @@ yarn add stylelint-config-werk85 stylelint -D
 
 ## Usage
 
-Create a `.stylelintrc.js` file in your project root and add the following content
+Create a `.stylelintrc.json` file in your project root and add the following content
 
-### If using styled-components and scss
-
-```js
-module.exports = {
-  extends: 'stylelint-config-werk85/styled'
+```json
+{
+  "extends": "stylelint-config-werk85"
 }
 ```
 
-### If using scss without styled-components
+### If you also use scss
 
-```js
-module.exports = {
-  extends: 'stylelint-config-werk85/scss'
+```json
+{
+  "extends": [
+    "stylelint-config-werk85",
+    "stylelint-config-werk85/scss"
+  ]
 }
 ```
 
-### If using css only
+### If use styled-components
 
-```js
-module.exports = {
-  extends: 'stylelint-config-werk85'
+It is recommended to install the `vscode-styled-components` Extension for having syntax highlighting and IntelliSense for styled-components as well.
+
+```json
+{
+  "extends": [
+    "stylelint-config-werk85",
+    "stylelint-config-werk85/styled"
+  ]
 }
 ```
+
+## Project additions
+
+Following additions to your project are recommended
+
+### Script
 
 For convenience you can add the following npm scripts to your `package.json`
 
 ```json
 {
   "scripts": {
-    "lint:styles": "stylelint src/styles/**/*.scss",
+    "lint:styles": "stylelint src/**/*.{scss,tsx}",
     "lint:styles:fix": "yarn lint:styles --fix",
   }
 }
+```
+
+### Recommended extensions
+
+To ensure usage of recommended extension you can add following to `.vscode/extensions.json` within your project.
+
+```json
+{
+  "recommendations": [
+    "styled-components.vscode-styled-components",
+    "stylelint.vscode-stylelint"
+  ]
+}
+```
+
+## Trouble shooting
+
+### stylelint does not lint my scss or css files
+
+Make sure to have in your or the workspace VSCode settings the following defined:
+
+```json
+"stylelint.validate": [
+  "css",
+  "scss"
+]
 ```

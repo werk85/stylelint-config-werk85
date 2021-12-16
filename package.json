@@ -6,11 +6,22 @@
   "author": "Malte Legenhausen <malte@werk85.de>, David Zacharias <david@werk85.de>",
   "license": "MIT",
   "dependencies": {
-    "prettier": "^2.3.2",
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recommended": "^5.0.0",
-    "stylelint-prettier": "^1.2.0",
-    "stylelint-scss": "^3.20.1"
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.2",
+    "postcss-syntax": "^0.36.2",
+    "prettier": "^2.5.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.1.0"
+  },
+  "packageManager": "yarn@3.1.1",
+  "devDependencies": {
+    "npm-check-updates": "^12.0.5"
   }
 }
