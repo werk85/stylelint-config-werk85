@@ -84,3 +84,19 @@ Make sure to have in your or the workspace VSCode settings the following defined
   "scss"
 ]
 ```
+
+## How to release
+
+Make sure you have added all files you want to be included in the release in the `package.json`s `files` property.
+
+Logon to NPM Package Registry via
+
+```
+npm login
+```
+
+Bump version in `package.json` and run
+
+```
+npm publish
+```

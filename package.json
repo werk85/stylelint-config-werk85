@@ -1,18 +1,23 @@
 {
   "name": "stylelint-config-werk85",
-  "version": "0.0.4",
-  "main": "index.js",
+  "version": "1.0.0-beta.2",
+  "main": "index.json",
   "repository": "git@github.com:werk85/stylelint-config-werk85.git",
   "author": "Malte Legenhausen <malte@werk85.de>, David Zacharias <david@werk85.de>",
   "license": "MIT",
+  "files": [
+    "index.json",
+    "scss.json",
+    "styled.json"
+  ],
   "dependencies": {
-    "@stylelint/postcss-css-in-js": "^0.37.2",
-    "postcss": "^8.4.5",
-    "postcss-scss": "^4.0.2",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "postcss": "^8.4.13",
+    "postcss-scss": "^4.0.4",
     "postcss-syntax": "^0.36.2",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.2",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-prettier": "^2.0.0"
@@ -20,8 +25,8 @@
   "peerDependencies": {
     "stylelint": "^14.1.0"
   },
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@3.2.0",
   "devDependencies": {
-    "npm-check-updates": "^12.0.5"
+    "npm-check-updates": "^12.5.11"
   }
 }
